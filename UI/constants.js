@@ -1,42 +1,15 @@
 export const abi = [
 	{
-		"inputs": [],
-		"stateMutability": "nonpayable",
-		"type": "constructor"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "owner",
-				"type": "address"
-			}
-		],
-		"name": "OwnableInvalidOwner",
-		"type": "error"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "account",
-				"type": "address"
-			}
-		],
-		"name": "OwnableUnauthorizedAccount",
-		"type": "error"
-	},
-	{
 		"anonymous": false,
 		"inputs": [
 			{
-				"indexed": true,
+				"indexed": false,
 				"internalType": "address",
 				"name": "previousOwner",
 				"type": "address"
 			},
 			{
-				"indexed": true,
+				"indexed": false,
 				"internalType": "address",
 				"name": "newOwner",
 				"type": "address"
@@ -221,4 +194,4 @@ export const abi = [
 		"type": "function"
 	}
 ]
-export const contractAddress = "0xE0617D8511B11F50bf42f9b075a9444f07C65B37"
+export const contractAddress = "0xa04Ce3F119F9d9AC04571EA03b9CB4c76453816a"

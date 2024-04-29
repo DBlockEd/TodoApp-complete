@@ -2,11 +2,9 @@
 
 pragma solidity ^0.8.25;
 
-import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
+import './ownable.sol';
 
 contract TodoApp is Ownable {
-
-    constructor() Ownable(msg.sender) {}
 
     uint256 public todoPrice = 0.01 ether;
     
@@ -66,7 +64,7 @@ contract TodoApp is Ownable {
     }
 
     function changeTodoPrice(uint256 _newTodoPrice) public onlyOwner {
-        todoPrice = _newTodoPrice * 1 ether;
+        todoPrice = _newTodoPrice;
     }
 
 }
