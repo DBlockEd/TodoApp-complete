@@ -67,4 +67,15 @@ contract TodoApp is Ownable {
         todoPrice = _newTodoPrice;
     }
 
+    // Function to get the contract's ETH balance
+    function getContractBalance() public view returns (uint256) {
+        return address(this).balance;
+    }
+
+    // Function to withdraw the contract's ETH balance to the owner's address
+    function withdrawBalance() public onlyOwner {
+        require(address(this).balance > 0, "No balance to withdraw");
+        payable(owner()).transfer(address(this).balance);
+    }
+    
 }

@@ -58,6 +58,19 @@ export const abi = [
 		"type": "function"
 	},
 	{
+		"inputs": [],
+		"name": "getContractBalance",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
 		"inputs": [
 			{
 				"internalType": "uint256",
@@ -192,6 +205,13 @@ export const abi = [
 		],
 		"stateMutability": "view",
 		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "withdrawBalance",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
 	}
 ]
-export const contractAddress = "0xa04Ce3F119F9d9AC04571EA03b9CB4c76453816a"
+export const contractAddress = "0xb472171d8892bCa82F0B9b9E1764cec6ba827dcC"
